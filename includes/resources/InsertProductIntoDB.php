@@ -4,7 +4,7 @@ function InsertProduct(){
   
 
   $insert = "INSERT INTO StoreProducts (productname, price, stock)
-  VALUES ("cat", 99, "1" )";
+  VALUES (cat, 99, one )";
 
   echo "InsertProduct() function called";
   echo "{$insert}";
