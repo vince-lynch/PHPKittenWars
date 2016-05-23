@@ -1,10 +1,10 @@
 <?php
 echo "loaded insertproductintodb.php";
-function InsertProduct($productName,$price,$stock){
+function InsertProduct(){
   
 
   $insert = "INSERT INTO StoreProducts (productname, price, stock)
-  VALUES ($productName, $price, $stock )";
+  VALUES ("cat", 99, "1" )";
 
   echo "InsertProduct() function called";
   echo "{$insert}";
