@@ -1,3 +1,4 @@
+<?php 
 $url = getenv('JAWSDB_URL');
 $dbparts = parse_url($url);
 
@@ -14,3 +15,4 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 echo "Connection was successfully established!";
+?>
