@@ -1,5 +1,6 @@
 <?php
 $basedir = realpath(__DIR__);
+echo "arrived in addcat.php file";
 
 $target_dir = $basedir . '/assets/images/';
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
@@ -11,6 +12,7 @@ if(isset($_POST["submit"])) {
     if($check !== false) {
         echo "File is an image - " . $check["mime"] . ".";
         $uploadOk = 1;
+        echo "" . $_FILES["tmp_name"] . "file has been uploaded";
     } else {
         echo "File is not an image.";
         $uploadOk = 0;
