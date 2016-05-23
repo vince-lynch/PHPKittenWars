@@ -4,6 +4,6 @@ $basedir = realpath(__DIR__);
 include($basedir . '/includes/resources/InsertProductIntoDB.php');
 
 
-InsertProduct();
+InsertProduct("Cat: Henry", "20");
 
 ?>

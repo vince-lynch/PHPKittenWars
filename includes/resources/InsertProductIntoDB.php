@@ -1,10 +1,13 @@
 <?php
 echo "loaded insertproductintodb.php";
-function InsertProduct(){
+function InsertProduct($catname, $catprice){
   
 
-  $insert = "INSERT INTO StoreProducts (productname, price)
-VALUES ('Cat: Anton', '99')";
+  //$insert = "INSERT INTO StoreProducts (productname, price)
+//VALUES ('Cat: Anton', '99')";
+
+
+$insert = "INSERT INTO StoreProducts (productname, price) VALUES ('{$catname}', '{$catprice}')";
 
   echo "InsertProduct() function called";
   echo "{$insert}";
@@ -30,6 +33,7 @@ VALUES ('Cat: Anton', '99')";
 
   if ($conn->query($insert) === TRUE) {
       echo "New record created successfully";
+      echo "Successfully inserted {$catname} @ {$catprice} into product table";
   } else {
       echo "Error: " . $insert . "<br>" . $conn->error;
   }
