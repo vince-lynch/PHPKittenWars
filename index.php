@@ -9,7 +9,7 @@ $h1 = "kitten wars";
 
 //InsertProduct("Cat: Henry", "20");
 
-include($basedir . '/includes/resources/updaterecord.php');
+//include($basedir . '/includes/resources/updaterecord.php');
 
 ?>
 <head>
