@@ -2,7 +2,7 @@
 $basedir = realpath(__DIR__);
 echo "arrived in addcat.php file<br/>";
 
-$target_dir = '/assets/images/';
+$target_dir = '';
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 echo $target_file;
 $uploadOk = 1;
