@@ -11,7 +11,7 @@
 Cat's name: <input type="text" name="catsname"><br>
 Cat's Photo URL: <input type="text" name="catsphoto"><br>
 <input type="file" name="file1" id="fileToUpload">
-<input type="submit">
+<input type="submit" name="submit" value="Submit" />
 </form>
 
 
