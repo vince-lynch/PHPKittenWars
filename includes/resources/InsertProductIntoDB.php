@@ -8,7 +8,7 @@ function InsertProduct($productName,$price,$stock){
 
   echo "InsertProduct() function called";
   echo "{$insert}";
-  echo $url;
+  echo "{$GLOBALS['url']}";
 
   if ($conn->query($insert) === TRUE) {
       echo "New record created successfully";
