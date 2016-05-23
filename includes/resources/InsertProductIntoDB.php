@@ -7,7 +7,9 @@ function InsertProduct($productName,$price,$stock){
   VALUES ($productName, $price, $stock )";
 
   echo "InsertProduct() function called";
-
+  echo "{$insert}";
+  echo "{$conn}";
+  
   if ($conn->query($insert) === TRUE) {
       echo "New record created successfully";
   } else {
