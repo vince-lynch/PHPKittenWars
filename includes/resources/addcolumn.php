@@ -3,7 +3,7 @@
 include('connectDB.php');
 
 $conn = new mysqli($hostname, $username, $password, $database);
-$query = 'ALTER TABLE StoreProducts ADD ' . 'imageurl' . ' TINYINT NOT NULL DEFAULT \'0\'';
+$query = 'ALTER TABLE StoreProducts ADD ' . 'catpicture' . ' VARCHAR(30) NOT NULL';
 if ($conn->query($query) === TRUE) {
     echo "New column successfully";
 } else {
