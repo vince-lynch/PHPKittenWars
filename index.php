@@ -6,6 +6,6 @@ $basedir = realpath(__DIR__);
 
 //InsertProduct("Cat: Henry", "20");
 
-include($basedir . '/includes/resources/addcolumn.php');
+include($basedir . '/includes/resources/updaterecord.php');
 
 ?>
