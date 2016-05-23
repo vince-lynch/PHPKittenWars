@@ -9,7 +9,7 @@ if ($conn->connect_error) {
 } 
 
 //$sql = "SELECT id, productname, imageurl FROM StoreProducts";
-$sql = "SELECT id, imageurl FROM StoreProducts";
+$sql = "SELECT id, productname, catpicture FROM StoreProducts";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
