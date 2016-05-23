@@ -19,7 +19,7 @@ include($basedir . '/includes/resources/updaterecord.php');
 <h1><?php echo ' '. $h1; ?></h1>
 
 <ul>
-<?phpinclude($basedir . 'query');?>
+<?php include($basedir . '/includes/resources/query.php');?>
 </ul>
 
 </body>
