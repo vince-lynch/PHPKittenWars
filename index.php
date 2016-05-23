@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 <?php 
 $basedir = realpath(__DIR__);
 /////include($basedir . '/includes/resources/connectDB.php');
