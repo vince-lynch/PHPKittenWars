@@ -9,13 +9,13 @@ if ($conn->connect_error) {
 } 
 
 //$sql = "SELECT id, productname, imageurl FROM StoreProducts";
-$sql = "SELECT id, productname, catpicture FROM StoreProducts";
+$sql = "SELECT id, productname, catpicture, score FROM StoreProducts";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<li class='cat'>" . "id: " . $row["id"]. " - Name: " . $row["productname"]. " " . "<img src='/assets/images/" . $row["catpicture"] . "'/>" . "</li>";
+        echo "<li class='cat'>" . "id: " . $row["id"]. " - Name: " . $row["productname"]. " " . " Score: " . $row["score"]. "<img src='/assets/images/" . $row["catpicture"] . "'/>" . "</li>";
     }
 } else {
     echo "0 results";
