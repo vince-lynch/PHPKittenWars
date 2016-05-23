@@ -16,6 +16,9 @@ $h1 = "kitten wars";
   <title></title>
 </head>
 <body>
+<a href="new.php">Add your cat</a>
+
+
 <h1><?php echo ' '. $h1; ?></h1>
 
 <ul>

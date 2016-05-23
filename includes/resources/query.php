@@ -15,7 +15,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<li>" . "id: " . $row["id"]. " - Name: " . $row["productname"]. " " . "<img src='/assets/images/" . $row["catpicture"] . "'/>" . "</li>";
+        echo "<li class='cat'>" . "id: " . $row["id"]. " - Name: " . $row["productname"]. " " . "<img src='/assets/images/" . $row["catpicture"] . "'/>" . "</li>";
     }
 } else {
     echo "0 results";
