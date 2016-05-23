@@ -3,8 +3,8 @@ echo "loaded insertproductintodb.php";
 function InsertProduct(){
   
 
-  $insert = "INSERT INTO StoreProducts (productname, price, stock)
-  VALUES (cat, 99, one )";
+  $insert = "INSERT INTO MyGuests (productname, price)
+VALUES ('Cat: Anton', '99')";
 
   echo "InsertProduct() function called";
   echo "{$insert}";
