@@ -1,4 +1,5 @@
 <?php
+echo "loaded insertproductintodb.php";
 function InsertProduct($productName,$price,$stock){
   $insert = "INSERT INTO StoreProducts (productname, price, stock)
   VALUES ($productName, $price, $stock )";
