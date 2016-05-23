@@ -10,7 +10,7 @@ function InsertProduct($productName,$price,$stock){
   echo "{$insert}";
   echo "{$GLOBALS['url']}";
 
-  if ($conn->query($insert) === TRUE) {
+  if ($GLOBALS['url']->query($insert) === TRUE) {
       echo "New record created successfully";
   } else {
       echo "Error: " . $insert . "<br>" . $conn->error;
