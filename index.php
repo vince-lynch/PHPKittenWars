@@ -18,5 +18,9 @@ include($basedir . '/includes/resources/updaterecord.php');
 <body>
 <h1><?php echo ' '. $h1; ?></h1>
 
+<ul>
+<?phpinclude($basedir . 'query');?>
+</ul>
+
 </body>
 </html>
