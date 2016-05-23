@@ -3,7 +3,7 @@ include('connectDB.php');
 $id = "";
 $filename = ""; 
 
-$sql = "UPDATE StoreProducts SET catpicture='andrekitten.jpg' WHERE id=2";
+$sql = "UPDATE StoreProducts SET catpicture='anton.jpg' WHERE id=1";
 
 if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";
