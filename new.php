@@ -10,7 +10,7 @@
 <form action="addcat.php" method="post" enctype="multipart/form-data">
 Cat's name: <input type="text" name="catsname"><br>
 Cat's Photo URL: <input type="text" name="catsphoto"><br>
-<input type="file" name="fileToUpload" id="fileToUpload">
+<input type="file" name="file1" id="fileToUpload">
 <input type="submit">
 </form>
 
