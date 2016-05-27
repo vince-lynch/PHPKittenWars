@@ -26,10 +26,10 @@
         $fileTempName = $_FILES['theFile']['tmp_name'];
         
         //create a new bucket
-        $s3->putBucket("yourbucket", S3::ACL_PUBLIC_READ);
+        $s3->putBucket("kittenwars", S3::ACL_PUBLIC_READ);
         
         //move the file
-        if ($s3->putObjectFile($fileTempName, "yourbucket", $fileName, S3::ACL_PUBLIC_READ)) {
+        if ($s3->putObjectFile($fileTempName, "kittenwars", $fileName, S3::ACL_PUBLIC_READ)) {
           echo "<strong>We successfully uploaded your file.</strong>";
         }else{
           echo "<strong>Something went wrong while uploading your file... sorry.</strong>";
@@ -45,11 +45,11 @@
  <h1>All uploaded files</h1>
  <?php
   // Get the contents of our bucket
-  $contents = $s3->getBucket("yourbucket");
+  $contents = $s3->getBucket("kittenwars");
   foreach ($contents as $file){
   
     $fname = $file['name'];
-    $furl = "http://yourbucket.s3.amazonaws.com/".$fname;
+    $furl = "http://kittenwars.s3.amazonaws.com/".$fname;
     
     //output a link to the file
     echo "<a href=\"$furl\">$fname</a><br />";
