@@ -35,13 +35,12 @@
           echo "<strong>Something went wrong while uploading your file... sorry.</strong>";
         }
       }
+
+      // Insert Cat into the Database
+      Include($basedir . '/includes/resources/insertcat.php');
+      InsertCat($_POST["catsname"],$_POST["catsphoto"]);
     ?>
- <h1>Upload a file</h1>
- <p>Please select a file by clicking the 'Browse' button and press 'Upload' to start uploading your file.</p>
-      <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
-       <input name="theFile" type="file" />
-       <input name="Submit" type="submit" value="Upload">
-  </form>
+ 
  <h1>All uploaded files</h1>
  <?php
   // Get the contents of our bucket
