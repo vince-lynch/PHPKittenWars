@@ -1,7 +1,7 @@
 <?php
 echo "loaded insertproductintodb.php";
 function InsertCat($catname, $catphoto){
-  
+
 include('connectDB.php');
 
 $insert = "INSERT INTO StoreProducts (productname, catpicture) VALUES ('{$catname}', '{$catphoto}')";

@@ -8,6 +8,7 @@
 
  <body>
       <?php
+      $basedir = realpath(__DIR__);
       //include the S3 class
       if (!class_exists('S3'))require_once('S3.php');
       
