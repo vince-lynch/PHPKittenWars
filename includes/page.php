@@ -2,7 +2,7 @@
 $basedir = realpath(__DIR__);
 echo $basedir;
 //include the S3 class              
-if (!class_exists('S3'))require_once('S3.php');
+if (!class_exists('S3'))require_once($basedir . '/S3/' . 'S3.php');
  
 //AWS access info
 if (!defined('awsAccessKey')) define('awsAccessKey', 'CHANGETHIS');
