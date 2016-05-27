@@ -40,7 +40,7 @@
       // Insert Cat into the Database
       $test = Include('../resources/insertcat.php');
       echo 'does this reach here ' . $test;
-      InsertCat($_POST["catsname"],$_POST["catsphoto"]);
+      InsertCat($_POST["catsname"],$fileName);
     ?>
  
  <h1>All uploaded files</h1>
