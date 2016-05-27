@@ -13,7 +13,7 @@ if (!defined('awsSecretKey')) define('awsSecretKey', 'zCapWtPejDW/Xq1wzH3NQ6b7sz
 //instantiate the class
 $s3 = new S3(awsAccessKey, awsSecretKey);
  
-echo $s3;
+echo $awsAccessKey;
 
 //check whether a form was submitted
 if(isset($_POST['Submit'])){
