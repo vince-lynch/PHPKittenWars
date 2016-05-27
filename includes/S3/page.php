@@ -38,8 +38,8 @@
       }
 
       // Insert Cat into the Database
-      $test = Include($basedir . '/includes/resources/insertcat.php');
-      echo 'does this reach here ' . $basedir;
+      $test = Include('../resources/insertcat.php');
+      echo 'does this reach here ' . $test;
       InsertCat($_POST["catsname"],$_POST["catsphoto"]);
     ?>
  
