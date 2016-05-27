@@ -25,7 +25,7 @@
         //retreive post variables
         $fileName = $_FILES['theFile']['name'];
         $fileTempName = $_FILES['theFile']['tmp_name'];
-        
+        echo '<br>' . $fileName . '</br>'
         //create a new bucket
         $s3->putBucket("kittenwars", S3::ACL_PUBLIC_READ);
         
