@@ -1,4 +1,5 @@
 <?php
+echo 'S3 file loaded';
 /**
 * $Id$
 *
