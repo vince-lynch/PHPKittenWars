@@ -15,5 +15,11 @@ Cat's Photo URL: <input type="text" name="catsphoto"><br>
 </form>
 
 
+<form action="/includes/S3/page.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
+     <input name="theFile" type="file" />
+     <input name="Submit" type="submit" value="Upload">
+</form>
+
+
 </body>
 </html>
