@@ -26,14 +26,14 @@ if(isset($_POST['Submit'])){
 
 }
 
-$s3->putBucket("jurgens-nettuts-tutorial", S3::ACL_PUBLIC_READ);<br /><br />
+/*$s3->putBucket("jurgens-nettuts-tutorial", S3::ACL_PUBLIC_READ);<br /><br />
  
 //move the file
 if ($s3->putObjectFile($fileTempName, "jurgens-nettuts-tutorial", $fileName, S3::ACL_PUBLIC_READ)) {
     echo "We successfully uploaded your file.";
 }else{
     echo "Something went wrong while uploading your file... sorry.";
-}
+}*/
 ?>
 
 <form action="" method="post" enctype="multipart/form-data">
