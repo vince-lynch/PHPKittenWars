@@ -17,7 +17,9 @@ $row = $result->fetch_array();
 print '<br>' . $row[1] . '</br>'; //Cat Name
 print '<br>' . $row[6] . '</br>';//URL.jpg
 //print 'script got to here - line 18';
-return $catArray = [$row[0],$row[1],$row[6]];
+global $catArray;
+$catArray = [$row[0],$row[1],$row[6]];
+return $catArray;
 }
 
 ?>
