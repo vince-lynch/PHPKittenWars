@@ -1,6 +1,8 @@
 <?php
 include('connectDB.php');
-function ShowCat($editID){
+function ShowCat(){
+
+echo 'reached the function';
 
 $sql = "SELECT * FROM StoreProducts WHERE id = $editID";
 $result = $conn->query($sql);
