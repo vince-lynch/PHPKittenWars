@@ -4,7 +4,7 @@ include('connectDB.php');
 $editID = 1;
 
 
-$result = mysql_query("SELECT * FROM StoreProducts WHERE id = '1'");
+$result = $conn->query("SELECT * FROM StoreProducts WHERE id = '1'");
 if (!$result) {
     echo 'Could not run query: ' . mysql_error();
     exit;
