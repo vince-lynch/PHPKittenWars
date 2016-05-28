@@ -1,7 +1,9 @@
 <?php
-include('connectDB.php');
+
 function ShowCat($editID){
 
+  include('connectDB.php');
+  
 echo 'reached the function';
 
 echo $editID;
