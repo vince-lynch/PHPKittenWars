@@ -6,7 +6,7 @@ $editID = 1;
 $sql = "SELECT * FROM StoreProducts WHERE id = '1'";
 $result = $conn->query($sql);
 print 'script got to here line - 8';
-$row = $result->mysql_fetch_array();
+$row = $result->fetch_array();
 print 'script got to here - line 10';
 echo 'echo row[0]' . $row[0]; // 42
 print '<br>' . $row . '</br>';
