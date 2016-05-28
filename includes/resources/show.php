@@ -6,12 +6,11 @@ $editID = 1;
 $sql = "SELECT * FROM StoreProducts WHERE id = '1'";
 $result = $conn->query($sql);
 print 'script got to here line - 8';
-//$row = fetch_row($result);
-
-//echo 'echo row[0]' . $row[0]; // 42
-//print 'print row' . $row;
-print 'print result' . $result;
+$row = mysql_fetch_array($result) or die(mysql_error());
 print 'script got to here - line 10';
+echo 'echo row[0]' . $row[0]; // 42
+
+print 'script got to here - line 13';
 
 
 
