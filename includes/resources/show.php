@@ -10,7 +10,7 @@ if (!$result) {
     exit;
 }
 $row = fetch_row($result);
-
+print 'script got to here';
 echo 'echo row[0]' . $row[0]; // 42
 print 'print row' . $row;
 print 'print result' . $result;
