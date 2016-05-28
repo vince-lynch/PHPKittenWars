@@ -3,7 +3,7 @@
 function ShowCat($editID){
 
   include('connectDB.php');
-  
+
 echo 'reached the function';
 
 echo $editID;
@@ -17,7 +17,7 @@ print '<br>' . $row[0] . '</br>'; // ID
 print '<br>' . $row[1] . '</br>'; //Cat Name
 print '<br>' . $row[6] . '</br>';//URL.jpg
 print 'script got to here - line 18';
-
+$catArray = [$row[0],$row[1],$row[6]]
 }
 
 ?>
