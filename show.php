@@ -1,1 +1,5 @@
-show.php
+<?php
+
+print $_GET["id"];
+
+?>
