@@ -5,11 +5,12 @@ $editID = 1;
 
 
 $sql = "SELECT * FROM StoreProducts WHERE ID = 1";
-$result = $conn->query($sql);
+//$result = $conn->query($sql);
 
 //$query = mysql_query("SELECT * FROM StoreProducts WHERE ID = '$editID'");
-//$row = mysql_fetch_array($query);
+//
+$row = mysql_fetch_array($sql);
 
-print_r($result);
+print_r($row);
 
 ?>
