@@ -5,12 +5,9 @@ $editID = 1;
 
 $sql = "SELECT * FROM StoreProducts WHERE id = '1'";
 $result = $conn->query($sql);
-if (!$result) {
-    echo 'Could not run query: ' . mysql_error();
-    exit;
-}
+print 'script got to here line - 8';
 $row = fetch_row($result);
-print 'script got to here';
+print 'script got to here - line 10';
 echo 'echo row[0]' . $row[0]; // 42
 print 'print row' . $row;
 print 'print result' . $result;
