@@ -1,6 +1,6 @@
 <?php
 include('connectDB.php');
-function ShowCat(){
+function ShowCat($editID){
 
 echo 'reached the function';
 
