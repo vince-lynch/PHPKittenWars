@@ -3,15 +3,15 @@ include('connectDB.php');
 
 $editID = 1;
 
-$sql = "SELECT * FROM StoreProducts WHERE id = '1'"
+$sql = "SELECT * FROM StoreProducts WHERE id = '1'";
 $result = $conn->query($sql);
 if (!$result) {
     echo 'Could not run query: ' . mysql_error();
     exit;
 }
-//$row = fetch_row($result);
+$row = fetch_row($result);
 
-echo $result[0]; // 42
+echo $row[0]; // 42
 
 
 //print $row;
