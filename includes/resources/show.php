@@ -3,7 +3,7 @@ include('connectDB.php');
 
 $editID = 1;
 
-$sql = "SELECT * FROM StoreProducts WHERE id = '1'";
+$sql = "SELECT * FROM StoreProducts WHERE id = '10'";
 $result = $conn->query($sql);
 print 'script got to here line - 8';
 $row = $result->fetch_array();
