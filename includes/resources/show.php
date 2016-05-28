@@ -4,7 +4,7 @@ function ShowCat($editID){
 
 echo 'reached the function';
 
-echo $edit;
+echo $editID;
 
 $sql = "SELECT * FROM StoreProducts WHERE id = $editID";
 $result = $conn->query($sql);
