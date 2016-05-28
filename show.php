@@ -13,10 +13,10 @@ ShowCat($_GET["id"]);
 </head>
 <body>
 
-<h1>Cats Name: <?php $catArray[1]; ?></h1>
+<h1>Cats Name: <?php $GLOBALS[$catArray[1]]; ?></h1>
 <img src="http://kittenwars.s3.amazonaws.com/<?php $catArray[2]; ?>" />
 <p>
-Cat Id: <?php $catArray[0]; ?>
+Cat Id: <?php $GLOBALS[$catArray[0]]; ?>
 </p>
 
 
