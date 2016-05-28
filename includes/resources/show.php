@@ -4,6 +4,8 @@ function ShowCat($editID){
 
 echo 'reached the function';
 
+echo $edit;
+
 $sql = "SELECT * FROM StoreProducts WHERE id = $editID";
 $result = $conn->query($sql);
 print 'script got to here line - 8';
