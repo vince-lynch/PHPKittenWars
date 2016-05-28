@@ -10,6 +10,9 @@ $row = $result->fetch_assoc();
 print 'script got to here - line 10';
 echo 'echo row[0]' . $row[0]; // 42
 print '<br>' . $row . '</br>';
+print '<br>' . $row[1] . '</br>';
+print '<br>' . $row[2] . '</br>';
+print '<br>' . $row[3] . '</br>';
 print 'script got to here - line 13';
 
 
