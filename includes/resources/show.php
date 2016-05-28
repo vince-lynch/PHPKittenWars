@@ -13,6 +13,7 @@ print '<br>' . $row . '</br>';
 print '<br>' . $row[1] . '</br>';
 print '<br>' . $row[2] . '</br>';
 print '<br>' . $row[3] . '</br>';
+print '<br>' . $row[4] . '</br>';
 print 'script got to here - line 13';
 
 
