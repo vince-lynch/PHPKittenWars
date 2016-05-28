@@ -11,10 +11,9 @@ if (!$result) {
 }
 $row = fetch_row($result);
 
-echo $row[0]; // 42
-
-
-//print $row;
+echo 'echo row[0]' . $row[0]; // 42
+print 'print row' . $row;
+print 'print result' . $result;
 
 // $sql = "SELECT * FROM StoreProducts WHERE ID = 1";
 // $result = $conn->query($sql);
