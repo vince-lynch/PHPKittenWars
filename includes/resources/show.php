@@ -3,8 +3,8 @@ include('connectDB.php');
 
 $editID = 1;
 
-
-$result = $conn->query("SELECT * FROM StoreProducts WHERE id = '1'");
+$sql = "SELECT * FROM StoreProducts WHERE id = '1'"
+$result = $conn->query($sql);
 if (!$result) {
     echo 'Could not run query: ' . mysql_error();
     exit;
@@ -15,6 +15,7 @@ echo $row[0]; // 42
 echo $row[1]; // the email value
 echo $row[2]; // the email value
 
+print $row;
 
 // $sql = "SELECT * FROM StoreProducts WHERE ID = 1";
 // $result = $conn->query($sql);
