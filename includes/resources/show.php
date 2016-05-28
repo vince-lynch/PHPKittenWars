@@ -9,7 +9,7 @@ if (!$result) {
     echo 'Could not run query: ' . mysql_error();
     exit;
 }
-$row = mysql_fetch_row($result);
+$row = fetch_row($result);
 
 echo $row[0]; // 42
 echo $row[1]; // the email value
