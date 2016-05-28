@@ -6,19 +6,19 @@ include($basedir . '/includes/resources/show.php');
 ShowCat($_GET["id"]);
 
 ?>
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <title></title>
 </head>
 <body>
 
-<h1>Cats Name: <?php $catArray[1]; ?></h1>
-<img src="http://kittenwars.s3.amazonaws.com/<?php $catArray[2]; ?>" />
+<h1>Cats Name: <?php //$catArray[1]; ?></h1>
+<img src="http://kittenwars.s3.amazonaws.com/<?php //$catArray[2]; ?>" />
 <p>
-Cat Id: <?php $catArray[0]; ?>
+Cat Id: <?php //$catArray[0]; ?>
 </p>
 
 
 </body>
-</html>
+</html> -->
