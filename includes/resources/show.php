@@ -15,7 +15,7 @@ echo $row[0]; // 42
 echo $row[1]; // the email value
 echo $row[2]; // the email value
 
-print $row;
+//print $row;
 
 // $sql = "SELECT * FROM StoreProducts WHERE ID = 1";
 // $result = $conn->query($sql);
