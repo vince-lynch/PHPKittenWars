@@ -1,25 +1,25 @@
-<?php
-$basedir = realpath(__DIR__);
-print $_GET["id"];
-
-include($basedir . '/includes/resources/show.php');
-ShowCat($_GET["id"]);
-
-print $catArray;
-?>
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title></title>
 </head>
 <body>
 
-<h1>Cats Name: <?php //$catArray[1]; ?></h1>
-<img src="http://kittenwars.s3.amazonaws.com/<?php //$catArray[2]; ?>" />
+<?php
+$basedir = realpath(__DIR__);
+print $_GET["id"];
+
+include($basedir . '/includes/resources/cats-controller.php');
+$catArray = ShowCat($_GET["id"]);
+?>
+
+<h1>Cats Name: <?php print $catArray[1]; ?></h1>
+<img src="http://kittenwars.s3.amazonaws.com/<?php print $catArray[2]; ?>" width="400px" />
 <p>
-Cat Id: <?php //$catArray[0]; ?>
+<strong>Cat Id: </strong><?php print $catArray[0]; ?><br/>
+<strong>Score: </strong><?php print $catArray[3]; ?>
 </p>
 
 
 </body>
-</html> -->
+</html> 

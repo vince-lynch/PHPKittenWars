@@ -7,6 +7,7 @@
      </head>
 
  <body>
+ <a href="http://127.0.0.1:8000/new.php">Upload Another?</a>
       <?php
       $basedir = realpath(__DIR__);
       //include the S3 class
@@ -38,7 +39,7 @@
       }
 
       // Insert Cat into the Database
-      $test = Include('../resources/insertcat.php');
+      $test = Include('../resources/cats-controller.php');
       echo 'does this reach here ' . $test;
       InsertCat($_POST["catsname"],$fileName);
     ?>

@@ -1,0 +1,15 @@
+<?php
+echo "loaded UpdateCat.php";
+function UpdateCat($catid, $catname, $catphoto){
+
+  include('connectDB.php');
+
+  $sql = "UPDATE StoreProducts SET productname='{$catname}',catpicture='{$catphoto}'  WHERE id='{$catid}'";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Record updated successfully";
+    } else {
+        echo "Error updating record: " . $conn->error;
+    }
+}
+?>
