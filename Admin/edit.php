@@ -1,9 +1,11 @@
-
+<?php
+require('access.php');
+?>
 <?php
 $basedir = realpath(__DIR__);
 print "loaded edit page";
 print $_GET["id"];
-include($basedir . '/includes/resources/cats-controller.php');
+include('../includes/resources/cats-controller.php');
 $catArray = ShowCat($_GET["id"]);
 ?>
 <!DOCTYPE html>
@@ -13,6 +15,7 @@ $catArray = ShowCat($_GET["id"]);
   </title>
 </head>
 <body>
+<span>You are currently logged in, to logout <a href="/Admin/logout.php"> click here </a></span>
 <h1>Edit cat: <?php print $catArray[1]; ?> </h1>
 
 <?php
@@ -25,7 +28,7 @@ $catArray = ShowCat($_GET["id"]);
     echo $_POST[name];
     echo $_POST[image];
 
-    include($basedir . '/includes/resources/cats-controller.php');
+
     UpdateCat($_POST[ID],$_POST[name],$_POST[image]);
 }
 ?>

@@ -1,7 +1,85 @@
 body {
-  background-color: white;
+  background-color: #A4C3A4;
+  color: #77aa77;
 }
 
-.cat img {
-    width: 126px;
+A, A:link, A:visited, A:active {
+    color: #77aa77;
 }
+
+span#header {
+    font-size: 99px;
+    text-align: center;
+    position: relative;
+    /* left: 128px; */
+}
+
+main {
+  background-color: white;
+  max-width: 728px;
+  margin: auto;
+  padding: 10px;
+  display: block;
+}
+
+#content {
+    max-width: 578px;
+    display: inline-block;
+    position: relative;
+}
+
+img#kitten{
+  display: inline-block;
+  margin: 10px;
+  max-width: 250px;
+  max-height: 250px;
+  border: solid 5px;
+}
+
+#kittenwar{
+  text-align: center;
+}
+#versus{
+  text-align: center;
+}
+
+img#resultkitten {
+    width: 145px;
+}
+
+div.lastresults {
+  width: 500px;
+  display: inline-block;
+  margin: 0 auto;
+
+}
+
+div#resultLeft {
+  width: 156px;
+  height: 200px;
+  display: inline-block;
+  position: relative;
+  left: 138px;
+}
+
+div#resultRight {
+  width: 156px;
+  height: 200px;
+  display: inline-block;
+  position: relative;
+  left: 151px;
+}
+
+.sidebar {
+  width: 159px;
+      float: right;
+      /* text-align: left; */
+      display: inline-block;
+      /* position: relative; */
+      /* top: 103px; */
+      /* left: 575px; */
+      margin-top: 79px;
+      font-size: 16px;
+      border: 2px #77aa77 solid;
+      /* height: 100%; */
+  }

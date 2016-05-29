@@ -7,15 +7,17 @@
      </head>
 
  <body>
- <a href="http://127.0.0.1:8000/new.php">Upload Another?</a>
+ <a href="/new.php">Upload Another?</a>
       <?php
       $basedir = realpath(__DIR__);
       //include the S3 class
       if (!class_exists('S3'))require_once('S3.php');
       
+      $AWSKey = getenv('awsAccessKey');
+      $AWSPass = getenv('awsSecretKey');
       //AWS access info
-      if (!defined('awsAccessKey')) define('awsAccessKey', 'AKIAIJ5NUVL5MA3QQMZQ');
-      if (!defined('awsSecretKey')) define('awsSecretKey', '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');
+      if (!defined('awsAccessKey')) define('awsAccessKey', $AWSKey);
+      if (!defined('awsSecretKey')) define('awsSecretKey', $AWSPass);
       
       //instantiate the class
       $s3 = new S3(awsAccessKey, awsSecretKey);
@@ -40,21 +42,20 @@
 
       // Insert Cat into the Database
       $test = Include('../resources/cats-controller.php');
-      echo 'does this reach here ' . $test;
       InsertCat($_POST["catsname"],$fileName);
     ?>
  
  <h1>All uploaded files</h1>
  <?php
   // Get the contents of our bucket
-  $contents = $s3->getBucket("kittenwars");
-  foreach ($contents as $file){
+  //$contents = $s3->getBucket("kittenwars");
+  //foreach ($contents as $file){
   
-    $fname = $file['name'];
-    $furl = "http://kittenwars.s3.amazonaws.com/".$fname;
+    //$fname = $file['name'];
+    //$furl = "http://kittenwars.s3.amazonaws.com/".$fname;
     
     //output a link to the file
-    echo "<a href=\"$furl\">$fname</a><br />";
+    //echo "<a href=\"$furl\">$fname</a><br />";
   }
  ?>
  </body>

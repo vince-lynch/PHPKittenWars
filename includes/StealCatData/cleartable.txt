@@ -1,0 +1,5 @@
+<?php
+Include('../resources/cats-controller.php');
+     DeleteAllData()
+   ?>
+

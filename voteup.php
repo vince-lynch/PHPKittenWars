@@ -5,7 +5,11 @@ $basedir = realpath(__DIR__);
 //print $_GET["id"];
 include($basedir . '/includes/resources/cats-controller.php');
 VoteUp($_GET["id"]);
-
-header('Location: randomkitty.php');
+if (isset($_GET["p1"])){
+ header('Location: index.php?p1=' . $_GET["p1"] . '&p2=' . $_GET["p2"] . ''); 
  end();
+} else {
+  header('Location: index.php'); 
+ end();
+}
 ?>

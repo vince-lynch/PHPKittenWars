@@ -1,15 +1,18 @@
+<?php
+require('access.php');
+?>
 <!DOCTYPE html>
 <html>
 <head>
   <title></title>
 </head>
 <body>
-
+<span>You are currently logged in, to logout <a href="/Admin/logout.php"> click here </a></span>
 <?php
 $basedir = realpath(__DIR__);
 print $_GET["id"];
 
-include($basedir . '/includes/resources/cats-controller.php');
+include('../includes/resources/cats-controller.php');
 $catArray = ShowCat($_GET["id"]);
 ?>
 
