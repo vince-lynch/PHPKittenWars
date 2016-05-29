@@ -14,3 +14,6 @@ Various Crud, and PHP Design patterns were used for the layout and file structur
 
 I thought this would be useful, as in my current job as a Frontend Web Developer I mainly deal in CSS, HTML & JavaScript with a PHP backend, I thought it would be useful to make an app using the traditional structure I would use in Node.JS or a Ruby project.
 
+![alt text](https://kittenwars.s3.amazonaws.com/luzVCJX4Wf.jpg "Kitten Wars PHP")
+
+I wanted to make an app also about my housemates cat where their cat could potentially be the winner!!!
